@@ -224,7 +224,7 @@ define(function(require, exports, module) {
         function displayWebServer() {
             if (!stats || !stats.hasOwnProperty("host"))
                 rewrite();
-            window.open("//" + stats.host);
+            window.open("//" + stats.host, "Web_Server");
         }
 
         /*
