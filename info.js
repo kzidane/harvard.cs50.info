@@ -222,17 +222,19 @@ define(function(require, exports, module) {
          * Opens the web server in a new window/tab
          */
         function displayWebServer() {
-            if(!stats || !stats.hasOwnProperty("host")) rewrite();
-            window.open("//" +stats.host);
+            if (!stats || !stats.hasOwnProperty("host"))
+                rewrite();
+            window.open("//" + stats.host);
         }
 
         /*
          * Opens PHP My Admin, logged in, in a new window/tab
          */
         function openPHPMyAdmin() {
-            if(!stats || !stats.hasOwnProperty("host")) rewrite();
-            var pma = stats.host + '/phpmyadmin/';
-            window.open("//" + stats.user + ":" + stats.passwd + "@" + pma);
+            if (!stats || !stats.hasOwnProperty("host"))
+                rewrite();
+            var pma = stats.host + "/phpmyadmin";
+            window.open("//" + stats.user + ":" + stats.passwd + "@" + pma, "phpMyAdmin");
         }
 
         /*
