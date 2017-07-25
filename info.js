@@ -42,7 +42,7 @@ define(function(require, exports, module) {
         var stats = null;           // last recorded stats
         var timer = null;           // javascript interval ID
         var domain = null;          // current domain
-        var BIN = "~/bin/";         // location of .info50 script
+        var BIN = "~/.cs50/bin/";
         var presenting = false;
         var version = {};
 
